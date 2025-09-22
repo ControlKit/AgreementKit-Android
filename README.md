@@ -1,6 +1,6 @@
 # AgreementKit Android 📱
 
-[![JitPack](https://jitpack.io/v/YourUsername/AgreementKit.svg)](https://jitpack.io/#YourUsername/AgreementKit)
+[![JitPack](https://jitpack.io/v/ControlKit/AgreementKit-Android.svg)](https://jitpack.io/#ControlKit/AgreementKit-Android)
 [![API](https://img.shields.io/badge/API-24%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=24)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.10-blue.svg)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -40,7 +40,7 @@ Add the dependency to your app's `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.YourUsername:AgreementKit:0.0.1'
+    implementation 'com.github.ControlKit:AgreementKit-Android:0.0.1'
 }
 ```
 
@@ -340,8 +340,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 📧 Email: support@yourcompany.com
-- 🐛 Issues: [GitHub Issues](https://github.com/YourUsername/AgreementKit/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/YourUsername/AgreementKit/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/ControlKit/AgreementKit-Android/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/ControlKit/AgreementKit-Android/discussions)
 
 ---
 

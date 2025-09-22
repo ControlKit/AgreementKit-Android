@@ -31,7 +31,7 @@ Add the AgreementKit dependency to your app module's `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.YourUsername:AgreementKit:0.0.1'
+    implementation 'com.github.ControlKit:AgreementKit-Android:0.0.1'
 }
 ```
 
@@ -320,7 +320,7 @@ Check out the included sample app in the `app` module for a complete implementat
 If you encounter issues:
 
 1. Check the [FAQ](FAQ.md)
-2. Search [GitHub Issues](https://github.com/YourUsername/AgreementKit/issues)
+2. Search [GitHub Issues](https://github.com/ControlKit/AgreementKit-Android/issues)
 3. Create a new issue with detailed information
 4. Join our [Discord community](https://discord.gg/your-invite)
 

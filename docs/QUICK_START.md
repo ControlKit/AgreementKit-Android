@@ -10,7 +10,7 @@ Add to your app's `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.YourUsername:AgreementKit:0.0.1'
+    implementation 'com.github.ControlKit:AgreementKit-Android:0.0.1'
 }
 ```
 
@@ -215,8 +215,8 @@ AgreementViewConfig(
 ## 🆘 Need Help?
 
 - 📧 Email: support@yourcompany.com
-- 🐛 Issues: [GitHub Issues](https://github.com/YourUsername/AgreementKit/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/YourUsername/AgreementKit/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/ControlKit/AgreementKit-Android/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/ControlKit/AgreementKit-Android/discussions)
 
 ---
 
