@@ -25,6 +25,7 @@ class AgreementViewModel(
     fun setConfig(config: AgreementServiceConfig) {
         this.config = config
     }
+
     private var itemId: String? = null
 
     private val _mutableState = MutableStateFlow<AgreementState>(AgreementState.Initial)
@@ -42,7 +43,7 @@ class AgreementViewModel(
                 url + "/${itemId}",
                 config!!.appId,
                 config!!.version,
-                config!!.deviceId?:"",
+                config!!.deviceId ?: "",
                 BuildConfig.LIB_VERSION_NAME,
                 action,
             )
@@ -58,15 +59,16 @@ class AgreementViewModel(
 
         }
     }
+
     fun getData() {
-        if ( config == null) return
+        if (config == null) return
         viewModelScope.launch {
 
             val data = api.getData(
                 url,
                 config!!.appId,
                 config!!.version,
-                config!!.deviceId?:"",
+                config!!.deviceId ?: "",
                 BuildConfig.LIB_VERSION_NAME,
                 config!!.name
             )
@@ -92,17 +94,20 @@ class AgreementViewModel(
         }
 
     }
+
     private val _openDialog = MutableStateFlow(false)
     val openDialog: StateFlow<Boolean> = _openDialog.asStateFlow()
 
     fun showDialog() {
         _openDialog.value = true
     }
+
     fun submitAccept() {
         sendAction(Actions.ACCEPT.value)
         _openDialog.value = false
         clearState()
     }
+
     fun dismissDialog() {
         sendAction(Actions.DECLINE.value)
         _openDialog.value = false

@@ -22,10 +22,10 @@ import com.sepanta.controlkit.agreementkit.view.viewmodel.AgreementViewModelFact
 import com.sepanta.controlkit.agreementkit.view.viewmodel.state.AgreementState
 
 class AgreementKit(
-    private var config: AgreementServiceConfig ,
-    context: Context
+    private var config: AgreementServiceConfig,
+    context: Context,
 
-) {
+    ) {
 
     private var _viewModel: AgreementViewModel? = null
 
@@ -56,7 +56,7 @@ class AgreementKit(
     @Composable
     internal fun ConfigureComposable(
         onDismiss: (() -> Unit)? = null,
-        onState: ((AgreementState) -> Unit)? = null
+        onState: ((AgreementState) -> Unit)? = null,
     ) {
         if (_viewModel == null) return
 
@@ -81,7 +81,7 @@ class AgreementKit(
 
             is AgreementState.ShowView -> state.data?.let {
                 response.value = it
-                    onState?.invoke(AgreementState.ShowView(it))
+                onState?.invoke(AgreementState.ShowView(it))
                 _viewModel?.showDialog()
 
             }
@@ -92,6 +92,7 @@ class AgreementKit(
             else -> Unit
         }
     }
+
     @Composable
     private fun InitView(response: MutableState<DataResponse?>) {
         response.value?.let { data ->
@@ -99,6 +100,7 @@ class AgreementKit(
                 .ShowView(config = config.viewConfig, data, _viewModel!!)
         }
     }
+
     fun showView() {
         _viewModel?.getData()
     }
@@ -106,12 +108,12 @@ class AgreementKit(
 
 @Composable
 fun agreementKitHost(
-    config: AgreementServiceConfig ,
+    config: AgreementServiceConfig,
     onDismiss: (() -> Unit)? = null,
     onState: ((AgreementState) -> Unit)? = null,
 ): AgreementKit {
     val context = LocalContext.current
-    val kit = remember { AgreementKit(config,context) }
+    val kit = remember { AgreementKit(config, context) }
     kit.ConfigureComposable(onState = onState, onDismiss = onDismiss)
     return kit
 }
