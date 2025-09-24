@@ -340,8 +340,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 📧 Email: support@yourcompany.com
-- � iOS Version: [AgreementKit-iOS](https://github.com/ControlKit/AgreementKit)
-- �🐛 Issues: [GitHub Issues](https://github.com/ControlKit/AgreementKit-Android/issues)
+- 📱 iOS Version: [AgreementKit-iOS](https://github.com/ControlKit/AgreementKit)
+- 🐛 Issues: [GitHub Issues](https://github.com/ControlKit/AgreementKit-Android/issues)
 - 💬 Discussions: [GitHub Discussions](https://github.com/ControlKit/AgreementKit-Android/discussions)
 
 ---
